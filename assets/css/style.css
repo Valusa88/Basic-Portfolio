@@ -1,6 +1,6 @@
 body{
 	color: #777777;
-	background-image: url("../images/wov.png");
+	background-image: url("../images/mdf.png");
 	border-color: #dddddd;
 	background-color: #ffffff;
 	font-size: 18px;
@@ -47,18 +47,18 @@ h3{
 
 /*header*/
 
-#masthead {
+#header {
 	background: #ffffff;
-	margin: 0 0 30px;
 	z-index: 99;
 	color: #ffffff;
 	overflow: auto;
 	border-bottom: 2px solid #cccccc;
-	position: fixed;
+	position: initial;
 	width: 100%;
+	margin-top: -10px;
 }
 #logo {
-	width: 250px;
+	width: 260px;
 	height: 90px;
 	background: #4aaaa5;
 	float: left;
@@ -70,10 +70,10 @@ h3{
 	font-size: 30px;
 	text-decoration: none;
 }
-
 nav {
 	float: right;
 	margin-top: 25px;
+	padding: 0 10px 0 0;
 }
 nav a {
 	color: #999999;
@@ -84,16 +84,13 @@ nav a {
 	padding-left: 15px;
 	line-height: 18px;
 }
-nav a:first-child {
-	border-left: 0 none;
-}
 
 /*footer*/
 
 footer {
 	background: #666666;
 	color: #ffffff;
-	padding: 30px 0;
+	padding: 10px;
 	clear: both;
 	border-top: 8px solid #4aaaa5;
 	color: #cccccc;
@@ -105,13 +102,14 @@ footer {
 	width: 160px;
 	height: 160px;
 	float: left;
+	margin-right: 20px;
 }
 
 #main-container {
-	padding-top: 130px;
+	padding-top: 20px;
 }
 .main-section {
-	text align: left;
+	text align: justify;
 	background: #fff;
 	padding: 30px;
 	margin: 0 0 40px 0;
@@ -123,22 +121,22 @@ footer {
 
 /*portfolio page*/
 
-.work {
+.pfimg {
 	width: 274px;
 	overflow: auto;
 	position: relative;
 	float: left;
 	margin: 20px 0 25px;
 }
-.work:nth-child(even) {
+.pfimg:nth-child(even) {
 	margin-right: 40px;
 }
-.work img {
+.pfimg img {
 	width: 100%;
 	border: 0 none;
 	opacity: .8;
 }
-.work h3 {
+.pfimg h3 {
 	border-bottom: 0;
 	background: #4aaaa5;
 	color: #fff;
@@ -151,22 +149,17 @@ footer {
 	margin-bottom: 0;
 	font-weight: 300;
 }
-.auth-image {
-	width: 200px;
-	height: auto;
-	margin-top: 10px;
-	float: left;
-	margin-right: 25px;
-}
-
 /*contact page*/
 
 #contact-form ul {
 	margin-bottom: 20px;
+	width: 100%;
+	padding: 0px;
 }
 #contact-form li {
 	margin-bottom: 10px;
-}
+	width: 100%;
+	}
 label,
 input[type=text],
 input[type=email],
@@ -190,72 +183,6 @@ input[type=submit] {
 	border: 0 none;
 	color: #fff;
 	font-size: 18px;
-	padding: 10px 30px;
+	padding: 0px 30px;
 	cursor: pointer;
-}
-
-/*media queries*/
-
-@media screen (max-width:980px){
-    .auth-image {
-        float: none;
-        width:100%;
-    }
-	.container,
-	.sidebar {
-		padding: 50px;
-		width: 100%;
-		text-align: left;
-		float: left;
-	}
-}
-
-@media screen and (max-width:768px){
-    .auth-image {
-        float:left;
-        width:50%;
-    }
-    #main-container {
-        max-width: 100%;
-        padding: 30px;
-        padding-top: 100px;
-    }
-	.main-content,
-	.sidebar {
-		width: 100%;
-		text-align: left;
-		clear: both;
-	}
-	.sidebar {
-		float: none;
-		max-width: 650px;
-	}
-	nav {
-		text-align: left;
-	}
-	nav a{
-		float: none;
-	}
-}
-
-@media screen and (max-width:640px) {
-
-	#logo {
-		position: center;
-		width: 100%;
-		background: #4aaaa5;
-	}
-	.main-content,
-	.sidebar {
-		width: 100%;
-		text-align: left;
-		float: left;
-	}
-	nav {
-		float: none;
-		text-align: center;
-	}
-	nav a{
-		float: none;
-	}
 }
